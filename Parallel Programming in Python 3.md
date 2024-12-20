@@ -128,3 +128,47 @@ The **multiprocessing** library allows you to run code in **parallel processes**
 - **Multiprocessing**: Useful for CPU-bound tasks, as it runs processes in parallel on multiple cores.
 
 By understanding when to use **threading**, **asyncio**, and **multiprocessing**, you can write efficient and scalable programs in Python that perform multiple tasks at once.
+
+
+
+### **Question 1:**
+**The Python 3 threading and multiprocessing libraries implement the same programming interface?**
+
+- **Answer:** **False**
+- **Explanation:** While both libraries allow for concurrent execution, the **threading** and **multiprocessing** libraries have different programming interfaces. The threading library works with threads within the same process, while the multiprocessing library works with separate processes, which have their own memory space.
+
+---
+
+### **Question 2:**
+**Using threading, programs can achieve the same capabilities as with multiprocessing, including networking or outside of program context?**
+
+- **Answer:** **False**
+- **Explanation:** **Threading** and **multiprocessing** are different approaches to achieving concurrency. Threads share memory space and are suited for I/O-bound tasks, whereas multiprocessing uses separate memory spaces and is better suited for CPU-bound tasks. Threading cannot fully replace multiprocessing for CPU-bound tasks or when working outside of the program context (e.g., networking with isolated processes).
+
+---
+
+### **Question 3:**
+**Which is not part of the asyncio syntax?**
+
+- **Answer:** **del**
+- **Explanation:** The valid components in **asyncio** syntax include `await`, `async`, `run`, and `sleep`. **`del`** is not related to asyncio.
+
+---
+
+### **Question 4:**
+**Presuming that there is an async function called print_time, which of the following commands when used in the blank space in the statement below would be used to start and block for its completion:**
+
+**___________________ print_time()**
+
+- **Answer:** **await**
+- **Explanation:** To start an **async** function and block until it completes, the correct syntax is to use **`await`**. `await` is used to pause execution until the asynchronous function completes.
+
+---
+
+### **Question 5:**
+**In the threading library, which single command executes one or more functions with arguments?**
+
+- **Answer:** **start_new_thread**
+- **Explanation:** In the **threading** library, the function **`start_new_thread`** is used to start a new thread and pass arguments to the target function that will be executed in that thread.
+
+
