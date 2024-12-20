@@ -1,6 +1,6 @@
 
 
-### ** Compiling and Executing C++ Code**
+# **Compiling and Executing C++ Code**
 
 1. **Code Overview**:  
    - **Main Function**: Initializes `x` and `y` arrays, performs addition, verifies the results, and deallocates memory.
